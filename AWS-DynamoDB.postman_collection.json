@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "dbbbf42f-c0bc-4800-b8b9-a65627a255a0",
+		"name": "AWS-DynamoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16561164"
+	},
+	"item": [
+		{
+			"name": "getData",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/getData?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"getData"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getData",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/getData?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"getData"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "103"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"67-PIc571G87Hq1YWyNq5/1gMDrPKM\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Feb 2023 22:40:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"1\",\n    \"name\": \"user1\",\n    \"email\": \"user1@gmail.com\",\n    \"orders\": [\n        {\n            \"id\": \"1\",\n            \"name\": \"order1\",\n            \"price\": \"100\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "getAllData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/getAllData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"getAllData"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getAllData",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/getAllData",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"getAllData"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "429"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1ad-Bv5EvmBG/YIfG9GYBZqJU2iv51w\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Feb 2023 22:47:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"1\",\n        \"name\": \"user1\",\n        \"email\": \"user1@gmail.com\",\n        \"order_id\": 1,\n        \"order_name\": \"order1\",\n        \"order_price\": \"100\"\n    },\n    {\n        \"id\": \"2\",\n        \"name\": \"user2\",\n        \"email\": \"user2@gmail.com\",\n        \"order_id\": 2,\n        \"order_name\": \"order2\",\n        \"order_price\": \"200\"\n    },\n    {\n        \"id\": \"3\",\n        \"name\": \"user3\",\n        \"email\": \"user3@gmail.com\",\n        \"order_id\": 3,\n        \"order_name\": \"order3\",\n        \"order_price\": \"300\"\n    },\n    {\n        \"id\": \"4\",\n        \"name\": \"user4\",\n        \"email\": \"user4@gmail.com\",\n        \"order_id\": 4,\n        \"order_name\": \"order4\",\n        \"order_price\": \"400\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
