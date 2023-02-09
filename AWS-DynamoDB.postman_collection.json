@@ -24,12 +24,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5000/getData?id=1",
-					"protocol": "http",
+					"raw": "https://aws-dynamodb.onrender.com/getData?id=1",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"aws-dynamodb",
+						"onrender",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"getData"
 					],
@@ -57,12 +58,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/getData?id=1",
-							"protocol": "http",
+							"raw": "https://aws-dynamodb.onrender.com/getData?id=1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"aws-dynamodb",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"getData"
 							],
@@ -79,32 +81,56 @@
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
-							"key": "X-Powered-By",
-							"value": "Express"
+							"key": "Date",
+							"value": "Thu, 09 Feb 2023 06:14:50 GMT"
 						},
 						{
 							"key": "Content-Type",
 							"value": "application/json; charset=utf-8"
 						},
 						{
-							"key": "Content-Length",
-							"value": "103"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"67-PIc571G87Hq1YWyNq5/1gMDrPKM\""
-						},
-						{
-							"key": "Date",
-							"value": "Wed, 08 Feb 2023 22:40:09 GMT"
+							"key": "Transfer-Encoding",
+							"value": "chunked"
 						},
 						{
 							"key": "Connection",
 							"value": "keep-alive"
 						},
 						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
+							"key": "CF-Ray",
+							"value": "796a777d6e7e2afb-DEL"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"67-PIc571G87Hq1YWyNq5/1gMDrPKM\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
 						}
 					],
 					"cookie": [],
@@ -118,12 +144,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5000/getAllData",
-					"protocol": "http",
+					"raw": "https://aws-dynamodb.onrender.com/getAllData",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"aws-dynamodb",
+						"onrender",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"getAllData"
 					]
@@ -136,12 +163,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/getAllData",
-							"protocol": "http",
+							"raw": "https://aws-dynamodb.onrender.com/getAllData",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"aws-dynamodb",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"getAllData"
 							]
@@ -152,32 +180,56 @@
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
-							"key": "X-Powered-By",
-							"value": "Express"
+							"key": "Date",
+							"value": "Thu, 09 Feb 2023 06:15:13 GMT"
 						},
 						{
 							"key": "Content-Type",
 							"value": "application/json; charset=utf-8"
 						},
 						{
-							"key": "Content-Length",
-							"value": "429"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"1ad-Bv5EvmBG/YIfG9GYBZqJU2iv51w\""
-						},
-						{
-							"key": "Date",
-							"value": "Wed, 08 Feb 2023 22:47:13 GMT"
+							"key": "Transfer-Encoding",
+							"value": "chunked"
 						},
 						{
 							"key": "Connection",
 							"value": "keep-alive"
 						},
 						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
+							"key": "CF-Ray",
+							"value": "796a781309a02afb-DEL"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1ad-Bv5EvmBG/YIfG9GYBZqJU2iv51w\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
 						}
 					],
 					"cookie": [],
